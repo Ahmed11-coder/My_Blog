@@ -12,16 +12,16 @@ export default function BlogBox(props: BlogProps) {
     }
 
     return (
-        <div className="w-[25%] relative p-3 border border-slate-400 rounded-xl">
+        <div className="relative p-3 border border-slate-400 rounded-xl">
             <Image 
                 src={props.img_src}
                 alt="blog_image"
                 width={500}
-                height={400}
+                height={200}
             />
             <div className="info w-full mt-5">
                 <h2 className="text-2xl font-bold">{props.blog_title}</h2>
-                <p className="text-gray-500">{props.blog_des}</p>
+                <p className="blog-des">{props.blog_des}</p>
                 <div className="flex items-end justify-between mt-3">
                     <div className="text-gray-400">
                         <p>Posted by: {props.author}</p>

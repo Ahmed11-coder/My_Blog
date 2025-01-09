@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NevBar from "@/components/navBar";
 import { BlogProvider } from "@/context/context";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,11 @@ export default function RootLayout({
       >
         <NevBar />
         <BlogProvider>
-          <div className="container mx-auto">
+          <div className="container mx-auto min-h-[calc(100vh-256px)]">
             {children}
           </div>
         </BlogProvider>
+        <Footer />
       </body>
     </html>
   );
