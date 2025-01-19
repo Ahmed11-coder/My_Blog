@@ -1,21 +1,31 @@
 import { ReactNode } from "react";
 
-export interface BlogProps {
-    img_src: string,
-    author: string,
-    blog_title: string,
-    blog_des:string,
+export interface ArticleProps {
+    id : number;
+    title : string;
+    content: string;
+    imgURL: string;
+    date : string;
+    author: string;
+}
+
+export interface NewArticleProps {
+    title : string;
+    content: string;
+    imgURL: string;
+    date : string;
+    author: string;
 }
 
 export interface CustomBottom {
     text: string,
     link: string,
-    blogDetails: BlogProps,
+    blogDetails: NewArticleProps,
 }
 
 export interface BlogContextType {
-    blogInfo : (blog: BlogProps) => void;
-    blogDetail: BlogProps | null;
+    blogInfo : (blog: NewArticleProps) => void;
+    blogDetail: NewArticleProps | null;
 }
 
 export interface BlogProviderProps {
