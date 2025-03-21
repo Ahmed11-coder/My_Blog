@@ -46,5 +46,13 @@
     "imgURL": "https://img.freepik.com/premium-photo/alone-man-at-bus-station-3_952161-133016.jpg?w=1380",
     "date": "Sun Jan 19 2025",
     "id": 6
+  },
+  {
+    "title": "New Article",
+    "author": "Ahmed",
+    "content": "New Content ",
+    "imgURL": "https://img.freepik.com/free-photo/majestic-stallion-runs-freely-rural-sunset-showcasing-beauty-generated-by-artificial-intelligence_25030-63326.jpg?t=st=1737639975~exp=1737643575~hmac=2b16293d8466200910d78523d66ab0625c26b0f803de861367645078a18076f7&w=1380",
+    "data": "Thu Jan 23 2025",
+    "id": 7
   }
 ]

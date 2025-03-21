@@ -1,15 +1,15 @@
 'use client';
-import { BlogProps, BlogProviderProps,  BlogContextType} from '@/types';
+import { NewArticleProps, BlogProviderProps,  BlogContextType} from '@/types';
 import { createContext, useState, useContext } from 'react';
 
 
-// Create the context ( accept Blogprops interface or undefined ) with an initial value of undefined
+// Create the context ( accept NewArticleProps interface or undefined ) with an initial value of undefined
 const BlogContext = createContext<BlogContextType | undefined>(undefined);
 
 export const BlogProvider = ({children} : BlogProviderProps) => {
-    const [blogDetail, setBlogDetail] = useState<BlogProps | null>(null);
+    const [blogDetail, setBlogDetail] = useState<NewArticleProps | null>(null);
 
-    const blogInfo = (blogDetails : BlogProps) => {
+    const blogInfo = (blogDetails : NewArticleProps) => {
         setBlogDetail(blogDetails);
     };
 
