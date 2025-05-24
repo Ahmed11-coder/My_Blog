@@ -18,6 +18,7 @@ export default function BlogBox(props: NewArticleProps) {
                 alt="blog_image"
                 width={500}
                 height={200}
+                loading="lazy"
             />
             <div className="info w-full mt-5">
                 <h2 className="text-2xl font-bold">{props.title}</h2>
